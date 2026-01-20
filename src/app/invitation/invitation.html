@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="envelope-wrapper" [class.open]="isOpen" (click)="toggleEnvelope()">
+    <div class="envelope">
+
+      <!-- Parte trasera del sobre -->
+      <div class="back"></div>
+
+      <!-- La Invitación (Carta) -->
+      <div class="letter">
+        <div class="content">
+          <div class="header">Mis 15 Años</div>
+          <div class="name">Gaby</div>
+          <div class="body">
+            <p>¡Te invito a celebrar este momento mágico conmigo!</p>
+            <div class="details">
+              <p>📅 <strong>20 de Octubre</strong></p>
+              <p>⏰ <strong>19:00 hrs</strong></p>
+              <p>📍 <strong>Salón "El Sueño"</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bolsillo frontal -->
+      <div class="pocket"></div>
+
+      <!-- Solapa superior -->
+      <div class="flap"></div>
+
+    </div>
+  </div>
+
+  <p class="hint" *ngIf="!isOpen">✨ Toca el sobre para abrir ✨</p>
+</div>
