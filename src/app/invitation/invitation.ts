@@ -9,8 +9,17 @@ import { Component } from '@angular/core';
 })
 export class Invitation {
   isOpen = false;
+  step = 0;
 
-  toggleEnvelope() {
-    this.isOpen = !this.isOpen;
+  onClick() {
+    if (!this.isOpen) {
+      this.isOpen = true;
+      this.step = 1;
+    } else {
+      this.step++;
+      if (this.step > 3) {
+        this.step = 1;
+      }
+    }
   }
 }

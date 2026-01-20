@@ -1,18 +1,31 @@
-<div class="container" [class.open]="isOpen">
-  <div class="envelope-wrapper" (click)="toggleEnvelope()">
+<div class="container" [class.open]="isOpen" [class.step-1]="step === 1" [class.step-2]="step === 2" [class.step-3]="step === 3">
+  <div class="envelope-wrapper" (click)="onClick()">
     <div class="envelope">
       <!-- La Tarjeta -->
+      <!-- Hoja 1 (Atrás): Detalles -->
       <div class="card">
         <div class="card-content">
-          <h1>Mis 15 Años</h1>
-          <h2>Gabriela</h2>
-          <div class="divider"></div>
-          <p>Te invito a celebrar este<br>momento tan especial.</p>
           <div class="details">
             <p><strong>Sábado, 20 de Octubre</strong></p>
             <p>7:00 PM</p>
             <p>Salón "Los Cristales"</p>
           </div>
+        </div>
+      </div>
+      <!-- Hoja 2 (Medio): Frase -->
+      <div class="card">
+        <div class="card-content">
+          <p>Te invito a celebrar este<br>momento tan especial.</p>
+        </div>
+      </div>
+      <!-- Hoja 3 (Frente): Título -->
+      <div class="card">
+        <div class="card-content">
+          <img src="https://i.pinimg.com/originals/dc/b4/05/dcb40592c11bc5126f50c3d2c1b5da2b.png" class="corner-decoration" alt="Decoración">
+          <h1>Mis 15<br>Años</h1>
+          <h2>Gaby Alejandra</h2>
+          <div class="divider"></div>
+          <div class="butterfly">🦋</div>
         </div>
       </div>
 
