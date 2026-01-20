@@ -26,7 +26,7 @@
 .envelope-wrapper {
   position: relative;
   width: 500px;
-  height: 340px;
+  height: 476px;
   cursor: pointer;
   transition: transform 0.6s ease;
   transform: scale(var(--scale));
@@ -65,7 +65,7 @@
 .flap.left {
   top: 0;
   left: 0;
-  border-width: 170px 0 170px 250px;
+  border-width: 238px 0 238px 250px;
   border-color: transparent transparent transparent #f06292;
   z-index: 3;
   border-radius: 5px 0 0 5px;
@@ -74,7 +74,7 @@
 .flap.right {
   top: 0;
   right: 0;
-  border-width: 170px 250px 170px 0;
+  border-width: 238px 250px 238px 0;
   border-color: transparent #ec407a transparent transparent;
   z-index: 3;
   border-radius: 0 5px 5px 0;
@@ -83,7 +83,7 @@
 .flap.bottom {
   bottom: 0;
   left: 0;
-  border-width: 0 250px 180px 250px;
+  border-width: 0 250px 252px 250px;
   border-color: transparent transparent #e91e63 transparent;
   z-index: 4;
   border-radius: 0 0 5px 5px;
@@ -92,7 +92,7 @@
 .flap.top {
   top: 0;
   left: 0;
-  border-width: 190px 250px 0 250px;
+  border-width: 266px 250px 0 250px;
   border-color: #f48fb1 transparent transparent transparent;
   z-index: 5;
   transform-origin: top;
@@ -107,7 +107,7 @@
   left: 50%;
   transform: translateX(-50%);
   width: 460px;
-  height: 300px;
+  height: 420px;
   background: white;
   z-index: 2; /* Detrás de las solapas inferiores, delante del fondo */
   transition: transform 0.6s ease;
@@ -151,7 +151,7 @@
 /* Configuración base de las tarjetas al abrir */
 .container.open .card {
   transition: all 0.6s ease;
-  transform: translateX(-50%) translateY(-200px) scale(0.9);
+  transform: translateX(-50%) translateY(-280px) scale(0.9);
   opacity: 0.5;
   z-index: 1;
 }
@@ -159,7 +159,7 @@
 /* --- PASO 1: Mostrar Portada (Hoja 3) --- */
 .container.open.step-1 .card:nth-of-type(3) {
   z-index: 10;
-  transform: translateX(-50%) translateY(-240px) scale(1);
+  transform: translateX(-50%) translateY(-336px) scale(1);
   opacity: 1;
 }
 .container.open.step-1 .card:nth-of-type(2) { z-index: 9; }
@@ -167,28 +167,28 @@
 
 /* --- PASO 2: Mostrar Frase (Hoja 2) --- */
 .container.open.step-2 .card:nth-of-type(3) {
-  transform: translateX(-150%) translateY(-240px) rotate(-20deg); /* Se va a la izquierda */
+  transform: translateX(-150%) translateY(-336px) rotate(-20deg); /* Se va a la izquierda */
   opacity: 0;
 }
 .container.open.step-2 .card:nth-of-type(2) {
   z-index: 10;
-  transform: translateX(-50%) translateY(-240px) scale(1);
+  transform: translateX(-50%) translateY(-336px) scale(1);
   opacity: 1;
 }
 .container.open.step-2 .card:nth-of-type(1) { z-index: 9; }
 
 /* --- PASO 3: Mostrar Detalles (Hoja 1) --- */
 .container.open.step-3 .card:nth-of-type(3) {
-  transform: translateX(-150%) translateY(-240px) rotate(-20deg);
+  transform: translateX(-150%) translateY(-336px) rotate(-20deg);
   opacity: 0;
 }
 .container.open.step-3 .card:nth-of-type(2) {
-  transform: translateX(150%) translateY(-240px) rotate(20deg); /* Se va a la derecha */
+  transform: translateX(150%) translateY(-336px) rotate(20deg); /* Se va a la derecha */
   opacity: 0;
 }
 .container.open.step-3 .card:nth-of-type(1) {
   z-index: 10;
-  transform: translateX(-50%) translateY(-240px) scale(1);
+  transform: translateX(-50%) translateY(-336px) scale(1);
   opacity: 1;
 }
 
@@ -210,7 +210,7 @@
 }
 
 .container.open .envelope-wrapper {
-  transform: translateY(120px) scale(var(--scale)); /* Baja el sobre para centrar la composición */
+  transform: translateY(168px) scale(var(--scale)); /* Baja el sobre para centrar la composición */
   transition-delay: 0.4s;
 }
 
