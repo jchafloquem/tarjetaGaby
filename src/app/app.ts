@@ -4,7 +4,7 @@ import { Invitation } from './invitation/invitation';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Invitation],
+  imports: [Invitation],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
