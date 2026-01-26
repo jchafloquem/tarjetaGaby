@@ -175,7 +175,7 @@
 /* Contenedor del contador para posicionamiento */
 .countdown-wrapper {
   position: absolute;
-  top: 25px; /* Espacio desde el borde superior de la tarjeta */
+  top: 30px; /* Espacio desde el borde superior de la tarjeta */
   left: 0;
   width: 100%;
   z-index: 10;
@@ -185,7 +185,7 @@
 .countdown {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 15px;
 }
 
 .time-box {
@@ -193,19 +193,19 @@
   flex-direction: column;
   align-items: center;
   background: rgba(255, 255, 255, 0.5);
-  padding: 5px 8px;
-  border-radius: 5px;
-  min-width: 45px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  min-width: 60px;
 }
 .time-box .number {
   font-family: 'Arial', sans-serif;
-  font-size: 1.2em;
+  font-size: 1.8em;
   font-weight: bold;
   color: #4E1E78;
 }
 .time-box .label {
-  font-size: 0.7em;
-  color: #4E1E78;
+  font-size: 1.5em;
+  color: red;
 }
 
 .card .mis-15 {
