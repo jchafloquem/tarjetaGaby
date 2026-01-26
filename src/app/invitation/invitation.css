@@ -328,6 +328,11 @@
   overflow: hidden; /* Para que la luz siga la curva y no se salga */
   z-index: 10; /* Por encima de las solapas para que se vea al estar cerrado */
   pointer-events: none; /* Permite hacer clic a través de la luz */
+  transition: opacity 0.5s ease;
+}
+
+.container.open .neon-border-container {
+  opacity: 0;
 }
 
 .neon-line {
@@ -381,9 +386,17 @@
 
 /* Texto de instrucción */
 .instruction {
-  margin-top: 50px;
+  position: fixed;
+  bottom: 40px;
+  left: 0;
+  width: 100%;
+  text-align: center;
   color: #fff;
-  font-weight: 600;
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-shadow: 0 2px 5px rgba(0,0,0,0.8);
+  z-index: 100;
+  pointer-events: none;
   animation: float 2s ease-in-out infinite;
 }
 
