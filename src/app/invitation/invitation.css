@@ -26,7 +26,7 @@
 .envelope-wrapper {
   position: relative;
   width: 520px;
-  height: 616px;
+  height: 740px;
   cursor: pointer;
   transition: transform 0.6s ease;
   transform: scale(var(--scale));
@@ -65,7 +65,7 @@
 .flap.left {
   top: 0;
   left: 0;
-  border-width: 308px 0 308px 260px;
+  border-width: 370px 0 370px 260px;
   border-color: transparent transparent transparent #4E1E78;
   z-index: 3;
   border-radius: 15px 0 0 15px;
@@ -74,7 +74,7 @@
 .flap.right {
   top: 0;
   right: 0;
-  border-width: 308px 260px 308px 0;
+  border-width: 370px 260px 370px 0;
   border-color: transparent #A343F0 transparent transparent;
   z-index: 3;
   border-radius: 0 15px 15px 0;
@@ -83,7 +83,7 @@
 .flap.bottom {
   bottom: 0;
   left: 0;
-  border-width: 0 260px 322px 260px;
+  border-width: 0 260px 386px 260px;
   border-color: transparent transparent #B268F3 transparent;
   z-index: 4;
   border-radius: 0 0 15px 15px;
@@ -92,7 +92,7 @@
 .flap.top {
   top: 0;
   left: 0;
-  border-width: 336px 260px 0 260px;
+  border-width: 403px 260px 0 260px;
   border-color: #7B3DB1 transparent transparent transparent;
   z-index: 5;
   transform-origin: top;
@@ -107,7 +107,7 @@
   left: 50%;
   transform: translateX(-50%);
   width: 480px;
-  height: 600px;
+  height: 720px;
   background: #f3e7fd;
   z-index: 2; /* Detrás de las solapas inferiores, delante del fondo */
   transition: transform 0.6s ease;
@@ -254,7 +254,7 @@
 /* Configuración base de las tarjetas al abrir */
 .container.open .card {
   transition: all 0.6s ease;
-  transform: translateX(-50%) translateY(-420px) scale(0.9);
+  transform: translateX(-50%) translateY(-504px) scale(0.9);
   opacity: 0.5;
   z-index: 1;
 }
@@ -262,7 +262,7 @@
 /* --- PASO 1: Mostrar Portada (Hoja 3) --- */
 .container.open.step-1 .card:nth-of-type(3) {
   z-index: 10;
-  transform: translateX(-50%) translateY(-476px) scale(1);
+  transform: translateX(-50%) translateY(-571px) scale(1);
   opacity: 1;
 }
 .container.open.step-1 .card:nth-of-type(2) { z-index: 9; }
@@ -270,28 +270,28 @@
 
 /* --- PASO 2: Mostrar Frase (Hoja 2) --- */
 .container.open.step-2 .card:nth-of-type(3) {
-  transform: translateX(-150%) translateY(-476px) rotate(-20deg); /* Se va a la izquierda */
+  transform: translateX(-150%) translateY(-571px) rotate(-20deg); /* Se va a la izquierda */
   opacity: 0;
 }
 .container.open.step-2 .card:nth-of-type(2) {
   z-index: 10;
-  transform: translateX(-50%) translateY(-476px) scale(1);
+  transform: translateX(-50%) translateY(-571px) scale(1);
   opacity: 1;
 }
 .container.open.step-2 .card:nth-of-type(1) { z-index: 9; }
 
 /* --- PASO 3: Mostrar Detalles (Hoja 1) --- */
 .container.open.step-3 .card:nth-of-type(3) {
-  transform: translateX(-150%) translateY(-476px) rotate(-20deg);
+  transform: translateX(-150%) translateY(-571px) rotate(-20deg);
   opacity: 0;
 }
 .container.open.step-3 .card:nth-of-type(2) {
-  transform: translateX(150%) translateY(-476px) rotate(20deg); /* Se va a la derecha */
+  transform: translateX(150%) translateY(-571px) rotate(20deg); /* Se va a la derecha */
   opacity: 0;
 }
 .container.open.step-3 .card:nth-of-type(1) {
   z-index: 10;
-  transform: translateX(-50%) translateY(-476px) scale(1);
+  transform: translateX(-50%) translateY(-571px) scale(1);
   opacity: 1;
 }
 
