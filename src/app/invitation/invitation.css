@@ -138,32 +138,38 @@
   position: relative;
 }
  .card-content .date {
-  font-size: 1.5em; /* Aumenta el tamaño de la fecha */
+  font-size: 2.0em; /* Aumenta el tamaño de la fecha */
   font-family: 'Arial';
-  color: rgb(121, 61, 167); /* Color de texto más alegre */
+  color: black; /* Color de texto más alegre */
   font-weight: bold; /* Hace que la fecha resalte */
-  margin-bottom: 0.5em; /* Espacio debajo de la fecha */
+  position: relative;
+  bottom: 30px;
 }
 .card-content .time {
-  font-size: 1.2em; /* Aumenta el tamaño de la fecha */
-  font-family: 'Roboto', cursive;
-  color: rgb(121, 61, 167); /* Color de texto más alegre */
+  font-size: 1.8em; /* Aumenta el tamaño de la fecha */
+  font-family: 'Arial', cursive;
+  color: black; /* Color de texto más alegre */
   font-weight: bold; /* Hace que la fecha resalte */
-  margin-top: 0.0em; /* Espacio debajo de la fecha */
+  position: relative;
+  bottom: 30px;
 }
 
  .card-content .parents {
-  font-size: 1.5em; /* Aumenta el tamaño de "Mis Padres" */
+  font-size: 2.5em; /* Aumenta el tamaño de "Mis Padres" */
   font-family: Arial Block;
-  color: rgb(121, 61, 167);
+  color: #A343F0;
   font-weight: bold; /* Hace que "Mis Padres" resalte */
   margin-bottom: 0.3em; /* Espacio debajo de "Mis Padres" */
+  position: relative;
+  bottom: 30px;
 }
 
  .card-content .name {
   font-size: 1.3em; /* Aumenta el tamaño de los nombres */
-  font-family: 'Arial', cursive;
+  font-family: Brush Script MT;
   margin-bottom: 0.2em; /* Espacio debajo de los nombres */
+  position: relative;
+  bottom: 30px;
 }
 
  .card-content .frase {
