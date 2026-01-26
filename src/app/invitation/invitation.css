@@ -313,7 +313,7 @@
 }
 
 .container.open .envelope-wrapper {
-  transform: translateY(168px) scale(var(--scale)); /* Baja el sobre para centrar la composición */
+  transform: translateY(calc(550px * var(--scale))) scale(var(--scale)); /* Baja el sobre para centrar la composición */
   transition-delay: 0.4s;
 }
 
