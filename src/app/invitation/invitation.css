@@ -25,7 +25,7 @@
 
 .envelope-wrapper {
   position: relative;
-  width: 500px;
+  width: 520px;
   height: 566px;
   cursor: pointer;
   transition: transform 0.6s ease;
@@ -37,7 +37,7 @@
   width: 100%;
   height: 100%;
   background-color: #f48fb1;
-  border-radius: 5px;
+  border-radius: 15px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
@@ -51,7 +51,7 @@
   height: 100%;
   background-color: #fce4ec;
   z-index: 0;
-  border-radius: 5px;
+  border-radius: 15px;
 }
 
 /* Solapas del sobre */
@@ -65,39 +65,39 @@
 .flap.left {
   top: 0;
   left: 0;
-  border-width: 283px 0 283px 250px;
+  border-width: 283px 0 283px 260px;
   border-color: transparent transparent transparent #4E1E78;
   z-index: 3;
-  border-radius: 5px 0 0 5px;
+  border-radius: 15px 0 0 15px;
 }
 
 .flap.right {
   top: 0;
   right: 0;
-  border-width: 283px 250px 283px 0;
+  border-width: 283px 260px 283px 0;
   border-color: transparent #A343F0 transparent transparent;
   z-index: 3;
-  border-radius: 0 5px 5px 0;
+  border-radius: 0 15px 15px 0;
 }
 
 .flap.bottom {
   bottom: 0;
   left: 0;
-  border-width: 0 250px 297px 250px;
+  border-width: 0 260px 297px 260px;
   border-color: transparent transparent #B268F3 transparent;
   z-index: 4;
-  border-radius: 0 0 5px 5px;
+  border-radius: 0 0 15px 15px;
 }
 
 .flap.top {
   top: 0;
   left: 0;
-  border-width: 311px 250px 0 250px;
+  border-width: 311px 260px 0 260px;
   border-color: #7B3DB1 transparent transparent transparent;
   z-index: 5;
   transform-origin: top;
   transition: transform 0.4s ease 0.4s, z-index 0.2s linear 0.4s; /* Retraso al cerrar */
-  border-radius: 5px 5px 0 0;
+  border-radius: 15px 15px 0 0;
 }
 
 /* Tarjeta */
@@ -106,9 +106,9 @@
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 460px;
+  width: 480px;
   height: 550px;
-  background: #F3E7FD;
+  background: #f3e7fd;
   z-index: 2; /* Detrás de las solapas inferiores, delante del fondo */
   transition: transform 0.6s ease;
   transition-delay: 0s; /* Inmediato al cerrar */
@@ -116,6 +116,7 @@
   box-sizing: border-box;
   text-align: center;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-radius: 15px;
 }
 
 /* Estilos específicos para cuando hay múltiples tarjetas (hojas) */
