@@ -317,6 +317,68 @@
   transition-delay: 0.4s;
 }
 
+/* --- Efecto de Luz de Neón Circulante --- */
+.neon-border-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px; /* Coincide con el borde del sobre */
+  overflow: hidden; /* Para que la luz siga la curva y no se salga */
+  z-index: 10; /* Por encima de las solapas para que se vea al estar cerrado */
+  pointer-events: none; /* Permite hacer clic a través de la luz */
+}
+
+.neon-line {
+  position: absolute;
+  display: block;
+}
+
+.neon-line.top {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, transparent, #fff);
+  animation: neon-anim-top 2s linear infinite;
+}
+
+.neon-line.right {
+  top: -100%;
+  right: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #fff);
+  animation: neon-anim-right 2s linear infinite;
+  animation-delay: 0.5s;
+}
+
+.neon-line.bottom {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(270deg, transparent, #fff);
+  animation: neon-anim-bottom 2s linear infinite;
+  animation-delay: 1s;
+}
+
+.neon-line.left {
+  bottom: -100%;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #fff);
+  animation: neon-anim-left 2s linear infinite;
+  animation-delay: 1.5s;
+}
+
+@keyframes neon-anim-top { 0% { left: -100%; } 50%, 100% { left: 100%; } }
+@keyframes neon-anim-right { 0% { top: -100%; } 50%, 100% { top: 100%; } }
+@keyframes neon-anim-bottom { 0% { right: -100%; } 50%, 100% { right: 100%; } }
+@keyframes neon-anim-left { 0% { bottom: -100%; } 50%, 100% { bottom: 100%; } }
+
 /* Texto de instrucción */
 .instruction {
   margin-top: 50px;
