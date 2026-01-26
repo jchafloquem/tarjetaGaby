@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 
 @Component({
   selector: 'app-invitation',
@@ -7,9 +7,44 @@ import { Component } from '@angular/core';
   templateUrl: './invitation.html',
   styleUrl: './invitation.css',
 })
-export class Invitation {
+export class Invitation implements OnInit, OnDestroy {
   isOpen = false;
   step = 0;
+
+  days: number = 0;
+  hours: number = 0;
+  minutes: number = 0;
+  seconds: number = 0;
+  private intervalId: any;
+
+  ngOnInit() {
+    this.startCountdown();
+  }
+
+  ngOnDestroy() {
+    if (this.intervalId) {
+      clearInterval(this.intervalId);
+    }
+  }
+
+  startCountdown() {
+    const targetDate = new Date('March 7, 2026 20:00:00').getTime();
+
+    this.intervalId = setInterval(() => {
+      const now = new Date().getTime();
+      const distance = targetDate - now;
+
+      if (distance < 0) {
+        clearInterval(this.intervalId);
+        return;
+      }
+
+      this.days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      this.hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      this.minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      this.seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    }, 1000);
+  }
 
   onClick() {
     if (!this.isOpen) {

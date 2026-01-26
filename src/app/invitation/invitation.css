@@ -171,6 +171,34 @@
   text-align: center; /* Centra la frase */
 }
 
+/* Estilos del contador */
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.time-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 5px 8px;
+  border-radius: 5px;
+  min-width: 45px;
+}
+.time-box .number {
+  font-family: 'Arial', sans-serif;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #4E1E78;
+}
+.time-box .label {
+  font-size: 0.7em;
+  color: #4E1E78;
+}
+
 .card .mis-15 {
   position: absolute;
   top: 10px;
