@@ -161,7 +161,7 @@
 }
 
  .card-content .parents {
-  font-size: 2.5em; /* Aumenta el tamaño de "Mis Padres" */
+  font-size: 1.5em; /* Aumenta el tamaño de "Mis Padres" */
   font-family: Arial Block;
   color: #A343F0;
   font-weight: bold; /* Hace que "Mis Padres" resalte */
@@ -171,7 +171,7 @@
 }
 
  .card-content .name {
-  font-size: 1.7em; /* Aumenta el tamaño de los nombres */
+  font-size: 1.5em; /* Aumenta el tamaño de los nombres */
   font-family: Brush Script MT;
   margin-bottom: 0.2em; /* Espacio debajo de los nombres */
   position: relative;
@@ -179,7 +179,7 @@
 }
 
  .card-content .frase {
-  font-size: 1.6em;
+  font-size: 1.2em;
   margin-top: 0.4em; /* Espacio sobre la frase */
   line-height: 1.2;
   margin-bottom: 0.4em;
